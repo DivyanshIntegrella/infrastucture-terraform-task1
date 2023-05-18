@@ -1,9 +1,7 @@
 variable "location" {
-  default = "West Europe"
 }
 
 variable "rg_name" {
-  default = "rg-divansh-playground"
 }
 
 variable "azure-terraform"{
