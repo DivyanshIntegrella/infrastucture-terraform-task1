@@ -11,4 +11,4 @@
  
  D:\task2> terraform apply -var='tenant="bd1024c1-001a-4eeb-963a-cfeccbc90226", sensitive=true' -> The tenant id is used for the key vault purpose and it should not be disclosed to user so sensitive is used.
  
- In this if any key is already assigned a value then it will be override that values with these values.
+ In this if any key is already assigned a value then it will override that values with these values.
