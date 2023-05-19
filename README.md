@@ -1,16 +1,10 @@
 ﻿# infrastucture-terraform-task1
- This is to assign value of variable through command line.
- 
- D:\task2> terraform apply -var="location=West Europe" -> this will set location to West Europe.
- 
- D:\task2> terraform apply -var="rg_name=rg-divyansh-playground" -> this is use to select resource group.
- 
- D:\task2> terraform apply -var="azure-terraform=App-Vnet" -> it is variable use to give name to virtual network.
- 
- D:\task2> terraform apply -var="password=Divyansh@123, sensitive=true" -> it stores the password and sensitive is used so at the time of creating the password is hidden from the user.
- 
- D:\task2> terraform apply -var="locals-name=gateway" -> A variable is created which has no pre-defined values.
- 
- D:\task2> terraform apply -var='tenant="bd1024c1-001a-4eeb-963a-cfeccbc90226", sensitive=true' -> The tenant id is used for the key vault purpose and it should not be disclosed to user so sensitive is used.
- 
- In this if any key is already assigned a value then it will override that values with these values.
+By using environment variable
+
+Terraform searches the environment of its own process for environment variables named TF_VAR_ followed by the name of a declared variable.
+
+In linux and mac os export keyword is used before environment variables TF_VAR_ .
+example : export TF_VAR_location="westeurope".
+
+In windows export keyword will give error instead of export we use SET-ITEM -path env:TF_VAR_<variable name> -value <value>.
+example : SET-ITEM -path env:TF_VAR_location -value "westeurope".
