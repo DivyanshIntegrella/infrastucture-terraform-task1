@@ -1,4 +1,6 @@
 ﻿# infrastucture-terraform-task1
+ This is to assign value of variable through command line.
+ 
  D:\task2> terraform apply -var="location=West Europe" -> this will set location to West Europe.
  
  D:\task2> terraform apply -var="rg_name=rg-divyansh-playground" -> this is use to select resource group.
