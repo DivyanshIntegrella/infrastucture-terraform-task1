@@ -244,7 +244,7 @@ resource "azurerm_route" "route1" {
 }
 
 resource "azurerm_key_vault" "key1" {
-  name = "key654"
+  name = "key010101"
   resource_group_name = var.rg_name
   location = var.location
   sku_name = "standard"
