@@ -3,4 +3,4 @@ In this I have created variable.tf file which contains variable with its default
 
 To run this terraform apply can be used directly.
 
-If we use -auto-approve with apply command then it will not ask for the permission of running after terraform apply in terminal.
+If we use -auto-approve with apply command then it will not ask for the permission to run after terraform apply in terminal.
